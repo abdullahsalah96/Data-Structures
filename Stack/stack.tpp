@@ -43,6 +43,15 @@ T Stack<T>::pop(){
 }
 
 template <class T>
+T Stack<T>::Top(){
+  if(is_empty()){
+    return 0;
+  }else{
+    return (top->data);
+  }
+}
+
+template <class T>
 void Stack<T>::clear(){
   Node<T> *temp = top;
   while(temp != NULL){
